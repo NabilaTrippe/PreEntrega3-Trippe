@@ -1,0 +1,43 @@
+
+
+//NOSOTROS
+.img-nosotros{
+    width: 35vw;
+    height: auto;
+}
+.nosotros-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll-nosotros{
+    overflow-x: hidden;
+}
+
+
+
+
+//breakpoints
+@media (max-width:992px){
+    .nosotros-main{
+        @include flex (column,center,center);
+    
+    }
+    .img-nosotros{
+        width: 80vw;
+        height: auto;
+    }
+
+}
+
+
+
+//CONTACTO
+
+//flex
+.flex-contacto{
+    @include flex(row,flex-start,center)
+}
+
+
+

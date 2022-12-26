@@ -1,0 +1,40 @@
+
+.font-aromas{
+    @include text ($font-content, $font-md, $font-gray);
+    text-align: center;
+    width: 90%;
+}
+
+
+//imágenes
+.img-16-9{
+    height: auto;
+    width: 20vw;
+    margin: 5% 5%;
+    /* margin-right: 20%; */ 
+    object-fit: fill;  
+}
+
+.img-aroma{
+    height: auto;
+    width: 80%;
+    /* padding-top: 10%; */
+    margin: 5% 0%;
+    
+    
+}
+
+@media (max-width:768px){
+    .img-aroma{
+        width: 70%;
+    }
+}
+
+@media (max-width:576px){
+    .img-16-9{
+        width: 30vw;
+    }
+    .img-aroma{
+        width: 90%;
+    }
+}

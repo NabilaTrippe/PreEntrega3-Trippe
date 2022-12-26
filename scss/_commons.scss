@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html{
+    font-size: 62.5% ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//STARTS VARIABLES
+
+//fonts family
+$font-title: 'Montserrat', sans-serif;
+$font-content:'Ubuntu';
+$font-error: 'Bebas Neue';
+
+//fonts size
+$font-md: 1.5rem;
+$font-lg:1.8rem;
+
+//font color
+$font-white: white;
+$font-gray: rgb(44, 42, 42); 
+$font-brown: rgb(184, 134, 101);
+
+
+//MIXIN
+
+@mixin text($font-family, $font-size, $color){
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
+
+//MAPS
+
+$bg-colors:(
+    'bg-gray': rgb(44, 42, 42),
+    'bg-brown':rgb(201, 160, 133),
+    'ligth':rgb(189, 188, 188),
+);
+
+
+
+//SELECTORES DE CLASES
+
+
+.breadcrumbs{
+    @include text ($font-content, $font-md, $font-gray);
+    a {
+     text-decoration: none;
+     color: $font-gray;
+     font-weight: lighter;
+    }
+    font-weight: bold;
+}
+
+.font-monserrat{
+    font-family: $font-title;
+}
+
+.font-ubuntu{
+    font-family: $font-content;
+}
+
+.font-size{
+    font-size: $font-md;
+}
+
+.bg-brown{
+    background-color: map-get($map:$bg-colors, $key: bg-brown);
+    color: $font-white;
+    font-family:$font-title;
+    font-size: $font-md;
+}
+
+.bg-gray{
+    @extend .bg-brown;
+    background-color:map-get($map:$bg-colors, $key: bg-gray);
+   
+}
+
+.bg-ligth{
+    @extend .bg-brown;
+    background-color:map-get($map:$bg-colors, $key: ligth);
+    color: $font-gray
+}
+
+
+//botones
+.boton{
+    background-color: map-get($map: $bg-colors, $key:bg-brown );
+    color: $font-white;
+    width: 30%;
+    height: auto;
+    font-size: $font-md;
+    &:hover{
+        transform: scale(0.9);
+        cursor: pointer;
+        transition: transform 0.2s; 
+        color: white;
+    }  
+}
+
+.dropdown-productos{
+    @extend .boton;
+    width: 15vw;
+    background-color: map-get($map:$bg-colors, $key: bg-gray);
+    &:hover{
+        transform: none;
+    }
+    @include text ($font-content, $font-md, $font-white);
+    a {
+        text-decoration: none;
+        color: $font-gray;
+        font-weight: lighter;
+       }
+    
+}
+
+//FLEX
+
+@mixin flex($direction,$justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.flex-direction{
+    flex-direction: column;
+    line-height: 30px;
+    padding-right: 30px;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;    
+}
+
+.flex-center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.flex-c{
+    @include flex (column, center, center);
+}
+
+.flex-space{
+    @include flex (row,space-between,center);
+}

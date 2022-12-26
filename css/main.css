@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.breadcrumbs {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  color: rgb(44, 42, 42);
+  font-weight: bold;
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: rgb(44, 42, 42);
+  font-weight: lighter;
+}
+
+.font-monserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-ubuntu {
+  font-family: "Ubuntu";
+}
+
+.font-size {
+  font-size: 1.5rem;
+}
+
+.bg-brown, .bg-ligth, .bg-gray {
+  background-color: rgb(201, 160, 133);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+.bg-gray {
+  background-color: rgb(44, 42, 42);
+}
+
+.bg-ligth {
+  background-color: rgb(189, 188, 188);
+  color: rgb(44, 42, 42);
+}
+
+.boton, .dropdown-productos {
+  background-color: rgb(201, 160, 133);
+  color: white;
+  width: 30%;
+  height: auto;
+  font-size: 1.5rem;
+}
+.boton:hover, .dropdown-productos:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.dropdown-productos {
+  width: 15vw;
+  background-color: rgb(44, 42, 42);
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  color: white;
+}
+.dropdown-productos:hover {
+  transform: none;
+}
+.dropdown-productos a {
+  text-decoration: none;
+  color: rgb(44, 42, 42);
+  font-weight: lighter;
+}
+
+.flex-direction {
+  flex-direction: column;
+  line-height: 30px;
+  padding-right: 30px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 80%;
+}
+
+nav li {
+  margin: 10px;
+}
+nav li a {
+  margin: 20px auto;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(44, 42, 42);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav li a:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-carrusel {
+  height: auto;
+  width: 90vw;
+}
+
+footer ul {
+  list-style: none;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer ul a:hover {
+  color: white;
+  text-decoration: underline;
+}
+footer img {
+  width: 25px;
+}
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 2px 0px;
+}
+
+.flex-div-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-div-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .flex-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.img-nosotros {
+  width: 35vw;
+  height: auto;
+}
+
+.nosotros-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll-nosotros {
+  overflow-x: hidden;
+}
+
+@media (max-width: 992px) {
+  .nosotros-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-nosotros {
+    width: 80vw;
+    height: auto;
+  }
+}
+.flex-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.font-aromas {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  color: rgb(44, 42, 42);
+  text-align: center;
+  width: 90%;
+}
+
+.img-16-9 {
+  height: auto;
+  width: 20vw;
+  margin: 5% 5%;
+  /* margin-right: 20%; */
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.img-aroma {
+  height: auto;
+  width: 80%;
+  /* padding-top: 10%; */
+  margin: 5% 0%;
+}
+
+@media (max-width: 768px) {
+  .img-aroma {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .img-16-9 {
+    width: 30vw;
+  }
+  .img-aroma {
+    width: 90%;
+  }
+}
+.img-vela {
+  height: 80vh;
+  width: auto;
+}
+
+.text-error, .text-error-content, .text-error-content a {
+  font-family: "Bebas Neue";
+  font-size: 20rem;
+  color: rgb(44, 42, 42);
+  margin: 0% 5%;
+}
+
+.text-error-content, .text-error-content a {
+  font-size: 5rem;
+  text-align: center;
+}
+.text-error-content a {
+  margin: auto;
+  color: white;
+  background-color: rgb(44, 42, 42);
+  width: 10vw;
+  height: auto;
+}
+.text-error-content a:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.flex-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .flex-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-vela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

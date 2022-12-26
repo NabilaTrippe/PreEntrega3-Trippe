@@ -1,0 +1,83 @@
+#logo{
+    width: 80%;
+}
+
+//botonera
+nav{
+    
+    li{
+        margin: 10px;
+        a{
+        margin: 20px auto;
+        text-decoration: none;
+        font-family: $font-title;
+        font-size: $font-md;
+        color:$font-gray; 
+        text-transform: uppercase;
+        font-weight: bold;  
+            &:hover{
+                transform: scale(0.9);
+                cursor: pointer;
+                transition: transform 0.2s; 
+                color: white;
+
+            }  
+        }   
+    }
+}
+
+.flex-nav{
+    @include flex (column,center,center);
+}
+
+
+//img carrusel
+.img-carrusel{
+    height: auto;
+    width: 90vw;
+}
+
+//footer
+footer{
+    
+    ul{
+     list-style: none;
+        a{
+            color: $font-white;
+            text-decoration: none;
+            &:hover{
+                color: $font-white;
+                text-decoration: underline;
+            }
+        }  
+    }
+    
+    img { 
+        width: 25px;
+    } 
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 2px 0px;
+
+    }
+}
+
+.flex-div-footer{
+    @include flex (row,center,center);
+}
+
+.flex-div-redes{
+    @include flex (column,center,center);
+}
+
+@media (max-width:991px){
+    .flex-nav{
+        @include flex (row,space-around,center);
+    }
+}
+
+
