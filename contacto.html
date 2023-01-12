@@ -75,6 +75,10 @@
             <article class="col-lg-4  mb-5 ps-5 font-monserrat fs-5">
               <form id="formContacto" class="row g-3">
                 <div class="col-md-6">
+                  <label for="inputName" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-6">
                   <label for="inputEmail4" class="form-label">Email</label>
                   <input type="email" class="form-control" id="inputEmail4">
                 </div>
@@ -110,9 +114,12 @@
                 </div>
               </form>
             </article>
-            <div id="alertaContacto">
-              
-            </div>
+
+            <!-- Tabla con los datos del usuario -->
+              <div id= "alertaContacto" class="col-lg-4 font-monserrat fs-5">
+                
+              </div> 
+
             <!-- ends form -->
             <!-- starts mapa -->
               <article class="col-lg-4">
@@ -176,8 +183,8 @@
       </div>
     </footer>
 
-
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
